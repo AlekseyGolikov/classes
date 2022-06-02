@@ -2,4 +2,6 @@
 
 ------
 
-metaclass-exam.py - example of using metaclass
+metaclass-exam.py - пример использования метакласса
+
+metaclass-exam2.py - пример динамического объявления класса, наследующего от метакласса
