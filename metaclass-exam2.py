@@ -21,10 +21,12 @@ def init(obj, name):
     obj._name = name
 def get_name(obj):
     return obj._name
-Student = MyMetaClass('Student', (), {})
-setattr(Student,'__doc__', "qwery")
-setattr(Student, '__init__', init)
-setattr(Student, 'get_name', get_name)
+Student = MyMetaClass('Student', (), {'__doc__': "qwery", '__init__': init, 'get_name': get_name})
+# setattr(Student,'__doc__', "qwery")
+# setattr(Student, '__init__', init)
+# setattr(Student, 'get_name', get_name)
+
+# print(Student.__dict__)
 
 stud = Student('Alex')
 print(stud.get_name())
